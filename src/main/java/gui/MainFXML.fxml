@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="559.0" prefWidth="515.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.Controller">
+   <children>
+      <Pane layoutX="4.0" prefHeight="653.0" prefWidth="515.0">
+         <children>
+            <Button fx:id="btnStart" layoutX="33.0" layoutY="592.0" mnemonicParsing="false" onAction="#handleStartButton" prefHeight="30.0" prefWidth="152.0" text="Start profile" />
+            <Label layoutX="389.0" layoutY="30.0" text="Profile">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <TextArea fx:id="outputField" layoutX="14.0" layoutY="157.0" prefHeight="397.0" prefWidth="474.0" />
+            <ChoiceBox fx:id="macroBox" layoutX="333.0" layoutY="110.0" prefHeight="25.0" prefWidth="150.0" />
+            <ChoiceBox fx:id="profileBox" layoutX="333.0" layoutY="46.0" prefHeight="25.0" prefWidth="150.0" />
+            <Label layoutX="389.0" layoutY="93.0" text="Macro">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label layoutX="33.0" layoutY="51.0" prefHeight="18.0" prefWidth="76.0" text="Key-press">
+            <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <TextField fx:id="keyField" editable="false" layoutX="33.0" layoutY="79.0" prefHeight="25.0" prefWidth="152.0" />
+            <Button fx:id="btnNewProfile" layoutX="312.0" layoutY="592.0" mnemonicParsing="false" onAction="#handleNewProfileButton" prefHeight="30.0" prefWidth="76.0" text="New" />
+            <Button fx:id="btnSaveProfile" layoutX="400.0" layoutY="592.0" mnemonicParsing="false" onAction="#handleProfileSaveButton" prefHeight="30.0" prefWidth="76.0" text="Save" />
+            <Label layoutX="358.0" layoutY="565.0" text="Profile control">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Button fx:id="btnDelMacro" layoutX="307.0" layoutY="109.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="25.0" mnemonicParsing="false" onAction="#handleMacroDelButton" prefHeight="25.0" prefWidth="25.0" style="-fx-background-color: red;" text="X" />
+            <Button fx:id="btnDelProfile" layoutX="307.0" layoutY="45.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="25.0" mnemonicParsing="false" onAction="#handleProfileDelButton" prefHeight="25.0" prefWidth="25.0" style="-fx-background-color: red;" text="X" />
+            <Button fx:id="btnListen" layoutX="185.0" layoutY="78.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="25.0" mnemonicParsing="false" onAction="#handleListenButton" prefHeight="25.0" prefWidth="25.0" text="*" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
